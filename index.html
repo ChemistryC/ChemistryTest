@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Periodic Table</title>
+        <link rel="stylesheet" type="text/css" href="./index.css">
+        <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <div class="game-holder">
+            <!-- Main Screen -->
+            <div class="window" id="main-screen">
+                <div class="title main-title">ARRANGE THE PERIODIC TABLE!</div>
+                <div class="button big-button" id="play">Play!</div>
+                <div class="button big-button" id="practice">Practice!</div>
+                <div class="button big-button" id="time-attack">Time Attack!</div>
+                <div class="bottom-buttons">
+                    <div class="button big-button" id="elements">Elements</div>
+                    <div class="button big-button" id="nft">NFT</div>                    
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/titan_chemistry/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/creaturestable_" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://t.me/+Im41CWNhSAk4NWE0" target="_blank" class="social-icon"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+
+            <!-- Game Screen -->
+            <div class="window" id="game-screen">
+                <div class="title game-title">READY FOR THE TEST?</div>
+                <div class="img-holder-container">
+                    <div class="img-holder"></div>
+                    <div class="button skip-button" id="skip-preview">Skip</div>
+                </div>
+                <div class="button-holder" id="button-holder-1">
+                    <div class="button-holder-row">
+                        <div class="button small-button"></div>
+                        <div class="button small-button"></div>
+                    </div>
+                    <div class="button-holder-row">
+                        <div class="button small-button"></div>
+                        <div class="button small-button"></div>
+                    </div>
+                </div>
+                <div class="button-holder" id="button-holder-2">
+                    <div class="button-holder-row"><div class="button big-button" id="play-again">Try Again!</div></div>
+                    <div class="button-holder-row" style="align-items:flex-start;"><div class="button big-button" id="back-to-menu">Menu!</div></div>
+                </div>
+                <div id="timer-display" class="timer">1.00s</div>
+            </div>
+
+            <!-- Elements Screen -->
+            <div class="window" id="elements-screen">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="element-search" placeholder="Search for an element...">
+                </div>
+                <div class="elements-grid">
+                    <!-- Elements will be dynamically inserted here -->
+                </div>
+                <div class="button big-button" id="back-to-main">Back to Main</div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./index.js"></script>
+    </body>
+</html>
